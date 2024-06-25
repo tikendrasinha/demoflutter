@@ -36,7 +36,7 @@ class _ShopHomePageState extends State<ShopHomePage> {
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 0,
                 ),
                 // for search bar
                 mySearchBar(),

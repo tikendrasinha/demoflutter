@@ -30,28 +30,31 @@ class ItemsDetails extends StatelessWidget {
                       Navigator.pop(context);
                     },
                     child: Container(
-                      width: 55,
-                      height: 50,
+                      // width: 55,
+                      // height: 50,
+
+                      width: 50,    //image back erro
+                      height: 40,
                       decoration: BoxDecoration(
                         color: Colors.grey[100],
                         borderRadius: BorderRadius.circular(15),
                       ),
                       child: const Icon(
                         Icons.keyboard_arrow_left,
-                        size: 25,
+                        size: 35,
                       ),
                     ),
                   ),
                   Image.asset(
                     "images/two line.png",
-                    height: 30,
+                    height: 30, //right upper two line
                   ),
                 ],
               ),
             ),
             Center(
               child: SizedBox(
-                height: 300,
+                height: 200,  //image
                 child: Hero(
                   tag: item.imageUrl,
                   child: Image.asset(
@@ -81,19 +84,19 @@ class ItemsDetails extends StatelessWidget {
                         Text(
                           item.title,
                           style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 33,
+                            fontWeight: FontWeight.bold, //fruite name
+                            fontSize: 25,
                           ),
                         ),
                         Text(
                           item.lb,
                           style: const TextStyle(
                             color: Colors.black45,
-                            fontSize: 18,
+                            fontSize: 15,
                           ),
                         ),
                         const SizedBox(
-                          height: 25,
+                          height: 0,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -101,8 +104,8 @@ class ItemsDetails extends StatelessWidget {
                             Row(
                               children: [
                                 Container(
-                                  height: 50,
-                                  width: 50,
+                                  height: 40,//- icon
+                                  width: 40,
                                   decoration: BoxDecoration(
                                     color: Colors.grey[100],
                                     borderRadius: const BorderRadius.only(
@@ -115,8 +118,8 @@ class ItemsDetails extends StatelessWidget {
                                   ),
                                 ),
                                 Container(
-                                    height: 50,
-                                    width: 50,
+                                    height: 40, //+icon
+                                    width: 40,
                                     decoration: BoxDecoration(
                                       color: Colors.grey[100],
                                     ),
@@ -130,8 +133,8 @@ class ItemsDetails extends StatelessWidget {
                                       ),
                                     )),
                                 Container(
-                                  height: 50,
-                                  width: 50,
+                                  height: 40, //+ icon
+                                  width: 40,
                                   decoration: BoxDecoration(
                                     color: Colors.grey[100],
                                     borderRadius: const BorderRadius.only(
@@ -149,12 +152,12 @@ class ItemsDetails extends StatelessWidget {
                               "\$${item.price}",
                               style: const TextStyle(
                                 color: Colors.black,
-                                fontSize: 35,
+                                fontSize: 20,
                               ),
                             ),
                           ],
                         ),
-                        const SizedBox(height: 25),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: SingleChildScrollView(
                             child: Column(
@@ -163,27 +166,27 @@ class ItemsDetails extends StatelessWidget {
                                   "Product Description",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 25,
+                                    fontSize: 20, //
                                   ),
                                 ),
-                                const SizedBox(height: 5),
+                                const SizedBox(height: 0),
                                 Text(
                                   item.description,
                                   style: const TextStyle(
                                     color: Colors.black,
-                                    fontSize: 18,
+                                    fontSize: 14,
                                   ),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                        const SizedBox(height: 22),
+                        const SizedBox(height: 12),
                         Row(
                           children: [
                             Container(
-                              height: 75,
-                              width: 80,
+                              height: 40,
+                              width: 60,
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(20),
@@ -191,16 +194,16 @@ class ItemsDetails extends StatelessWidget {
                               ),
                               child: Icon(
                                 Icons.favorite,
-                                size: 45,
+                                size: 30,
                                 color: item.color,
                               ),
                             ),
                             const SizedBox(
-                              width: 15,
+                              width: 45,
                             ),
                             Expanded(
                               child: Container(
-                                height: 75,
+                                height: 35,
                                 decoration: BoxDecoration(
                                   color: item.color,
                                   borderRadius: BorderRadius.circular(20),
