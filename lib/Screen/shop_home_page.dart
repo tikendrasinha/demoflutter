@@ -18,14 +18,14 @@ class _ShopHomePageState extends State<ShopHomePage> {
       body: SafeArea(
           child: Container(
             padding: const EdgeInsets.symmetric(
-              horizontal: 22,
+              horizontal: 15,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 myAppBar(),
                 const SizedBox(
-                  height: 22,
+                  height: 12,
                 ),
                 const Text(
                   "Fruits and berries",
@@ -157,12 +157,12 @@ class _ShopHomePageState extends State<ShopHomePage> {
           ),
           filled: true,
           fillColor: Colors.grey[100],
-          contentPadding: const EdgeInsets.all(25),
+          contentPadding: const EdgeInsets.all(8),
           prefixIcon: const Padding(
             padding: EdgeInsets.only(left: 25, right: 15),
             child: Icon(
               Icons.search,
-              size: 30,
+              size: 25,
             ),
           )),
     );
@@ -170,13 +170,13 @@ class _ShopHomePageState extends State<ShopHomePage> {
 
   Padding myAppBar() {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 22),
+      padding: const EdgeInsets.symmetric(vertical: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            width: 55,
-            height: 50,
+            width: 40,
+            height: 30,
             decoration: BoxDecoration(
               color: Colors.grey[100],
               borderRadius: BorderRadius.circular(15),
@@ -188,7 +188,7 @@ class _ShopHomePageState extends State<ShopHomePage> {
           ),
           Image.asset(
             "images/two line.png",
-            height: 30,
+            height: 25,
           ),
         ],
       ),
